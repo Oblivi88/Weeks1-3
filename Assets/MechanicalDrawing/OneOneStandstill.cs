@@ -24,8 +24,8 @@ public class OneOneStandstill : MonoBehaviour
     [Range(0, 1)]
     public float t = 0;
 
-    public Vector2 start; // start and end points for oneone to move back and forth
-    public Vector2 end;
+    public Vector2 start = new Vector2(7.72f, -2.29f); // start and end points for oneone to move back and forth
+    public Vector2 end = new Vector2(-7.62f, -2.29f);
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // getting mouse position

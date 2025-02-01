@@ -11,7 +11,7 @@ public class OneOneMoving : MonoBehaviour
 
     }
 
-    // very similar code as the OneOneMoving Script. Difference here being this one sets scale to 0 on click and reappears when moving is over.
+    // very similar code as the OneOneStandStill Script. Difference here being this one sets scale to 100% on click and disappears when moving is over.
     Boolean isMovingLeft = false;
     Boolean isMovingRight = false;
 
@@ -24,8 +24,8 @@ public class OneOneMoving : MonoBehaviour
     [Range(0, 1)]
     public float t = 0;
 
-    public Vector2 start; // start and end points for oneone to move back and forth
-    public Vector2 end;
+    public Vector2 start = new Vector2(7.72f, -2.8f); // start and end points for oneone to move back and forth
+    public Vector2 end = new Vector2(-7.62f, -2.8f);
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // getting mouse position
